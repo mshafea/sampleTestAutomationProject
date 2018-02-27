@@ -1,0 +1,1 @@
+https://github.com/seleniumQuery/seleniumQuery/wiki/seleniumQuery-and-IE-Driver
