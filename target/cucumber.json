@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 4822168544,
+              "duration": 1895096903,
               "status": "passed"
             },
             "line": 5,
             "name": "user is on home page",
             "match": {
-              "location": "BaseClass.user_is_on_home_page()"
+              "location": "TestBase.user_is_on_home_page()"
             },
             "keyword": "Given "
           }
@@ -27,11 +27,11 @@
         "before": [
           {
             "result": {
-              "duration": 3794615273,
+              "duration": 3624972811,
               "status": "passed"
             },
             "match": {
-              "location": "BaseClass.launchInternetExplorer()"
+              "location": "TestBase.launchInternetExplorer()"
             }
           }
         ],
@@ -42,11 +42,11 @@
         "after": [
           {
             "result": {
-              "duration": 1265469157,
+              "duration": 1057009824,
               "status": "passed"
             },
             "match": {
-              "location": "BaseClass.ieTearDown()"
+              "location": "TestBase.ieTearDown()"
             }
           }
         ],
@@ -55,7 +55,7 @@
         "steps": [
           {
             "result": {
-              "duration": 590491402,
+              "duration": 511430821,
               "status": "passed"
             },
             "line": 9,
@@ -82,13 +82,13 @@
         "steps": [
           {
             "result": {
-              "duration": 4451888558,
+              "duration": 1568768689,
               "status": "passed"
             },
             "line": 5,
             "name": "user is on home page",
             "match": {
-              "location": "BaseClass.user_is_on_home_page()"
+              "location": "TestBase.user_is_on_home_page()"
             },
             "keyword": "Given "
           }
@@ -98,11 +98,11 @@
         "before": [
           {
             "result": {
-              "duration": 2802036316,
+              "duration": 2681134298,
               "status": "passed"
             },
             "match": {
-              "location": "BaseClass.launchInternetExplorer()"
+              "location": "TestBase.launchInternetExplorer()"
             }
           }
         ],
@@ -113,11 +113,11 @@
         "after": [
           {
             "result": {
-              "duration": 1051366610,
+              "duration": 1044662570,
               "status": "passed"
             },
             "match": {
-              "location": "BaseClass.ieTearDown()"
+              "location": "TestBase.ieTearDown()"
             }
           }
         ],
@@ -126,8 +126,9 @@
         "steps": [
           {
             "result": {
-              "duration": 2360118538,
-              "status": "passed"
+              "duration": 5072645,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.pages.bdd.PageBase.waitForVisibilityOf(PageBase.java:20)\r\n\tat com.pages.bdd.HomePage.pressRightArrow(HomePage.java:57)\r\n\tat com.steps.bdd.HomeStep.user_press_on_the_right_arrow_on_the_slider(HomeStep.java:24)\r\n\tat ✽.When User Press on the right Arrow on the Slider(HomeTestSpec.feature:13)\r\n",
+              "status": "failed"
             },
             "line": 13,
             "name": "User Press on the right Arrow on the Slider",
@@ -138,8 +139,7 @@
           },
           {
             "result": {
-              "duration": 219876662,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "the Slider will  move to next slide",
@@ -150,8 +150,7 @@
           },
           {
             "result": {
-              "duration": 1906337907,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "User Press on the left arrow on the slider",
@@ -162,8 +161,7 @@
           },
           {
             "result": {
-              "duration": 234705325,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "the Slider will  move back to Previous slide",
@@ -189,13 +187,13 @@
         "steps": [
           {
             "result": {
-              "duration": 4310635314,
+              "duration": 1637279798,
               "status": "passed"
             },
             "line": 5,
             "name": "user is on home page",
             "match": {
-              "location": "BaseClass.user_is_on_home_page()"
+              "location": "TestBase.user_is_on_home_page()"
             },
             "keyword": "Given "
           }
@@ -205,11 +203,11 @@
         "before": [
           {
             "result": {
-              "duration": 2544447304,
+              "duration": 2628193250,
               "status": "passed"
             },
             "match": {
-              "location": "BaseClass.launchInternetExplorer()"
+              "location": "TestBase.launchInternetExplorer()"
             }
           }
         ],
@@ -220,11 +218,11 @@
         "after": [
           {
             "result": {
-              "duration": 1291199833,
+              "duration": 1046472933,
               "status": "passed"
             },
             "match": {
-              "location": "BaseClass.ieTearDown()"
+              "location": "TestBase.ieTearDown()"
             }
           }
         ],
@@ -233,7 +231,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5752644281,
+              "duration": 198016807234,
               "status": "passed"
             },
             "line": 20,
@@ -245,8 +243,9 @@
           },
           {
             "result": {
-              "duration": 373711216,
-              "status": "passed"
+              "duration": 617008,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.pages.bdd.PageBase.waitForVisibilityOf(PageBase.java:20)\r\n\tat com.pages.bdd.ComplaintPage.getPageHeader(ComplaintPage.java:17)\r\n\tat com.steps.bdd.HomeStep.complaint_page_is_oepened_successfully(HomeStep.java:57)\r\n\tat ✽.Then complaint page is opened successfully(HomeTestSpec.feature:21)\r\n",
+              "status": "failed"
             },
             "line": 21,
             "name": "complaint page is opened successfully",

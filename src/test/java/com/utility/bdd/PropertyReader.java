@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class PropertyReader {
-	 Properties properties = new Properties();
+	Properties properties = new Properties();
 	InputStream inputStream = null;
 
 	public PropertyReader() {
@@ -22,7 +22,7 @@ public class PropertyReader {
 		}
 	}
 
-	public  String readProperty(String key) {
+	public String readProperty(String key) {
 		return properties.getProperty(key);
 	}
 }

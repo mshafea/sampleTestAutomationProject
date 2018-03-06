@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3794615273,
+  "duration": 3999828675,
   "status": "passed"
 });
 formatter.background({
@@ -23,10 +23,10 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "BaseClass.user_is_on_home_page()"
+  "location": "TestBase.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 4822168544,
+  "duration": 1939536830,
   "status": "passed"
 });
 formatter.scenario({
@@ -52,15 +52,15 @@ formatter.match({
   "location": "HomeStep.ubs_logo_is_displayed()"
 });
 formatter.result({
-  "duration": 590491402,
+  "duration": 713153153,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1265469157,
+  "duration": 1237279404,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2802036316,
+  "duration": 3067273542,
   "status": "passed"
 });
 formatter.background({
@@ -76,10 +76,10 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "BaseClass.user_is_on_home_page()"
+  "location": "TestBase.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 4451888558,
+  "duration": 1614059321,
   "status": "passed"
 });
 formatter.scenario({
@@ -120,36 +120,34 @@ formatter.match({
   "location": "HomeStep.user_press_on_the_right_arrow_on_the_slider()"
 });
 formatter.result({
-  "duration": 2360118538,
-  "status": "passed"
+  "duration": 4553933,
+  "error_message": "java.lang.NullPointerException\r\n\tat com.pages.bdd.PageBase.waitForVisibilityOf(PageBase.java:20)\r\n\tat com.pages.bdd.HomePage.pressRightArrow(HomePage.java:57)\r\n\tat com.steps.bdd.HomeStep.user_press_on_the_right_arrow_on_the_slider(HomeStep.java:24)\r\n\tat ✽.When User Press on the right Arrow on the Slider(HomeTestSpec.feature:13)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "HomeStep.the_slider_will_move_to_next_slide()"
 });
 formatter.result({
-  "duration": 219876662,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "HomeStep.user_press_on_the_left_arrow_on_the_slider()"
 });
 formatter.result({
-  "duration": 1906337907,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "HomeStep.the_slider_will_move_back_to_previous_slide()"
 });
 formatter.result({
-  "duration": 234705325,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 1051366610,
+  "duration": 1507020581,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2544447304,
+  "duration": 2370785115,
   "status": "passed"
 });
 formatter.background({
@@ -165,10 +163,10 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "BaseClass.user_is_on_home_page()"
+  "location": "TestBase.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 4310635314,
+  "duration": 1735878209,
   "status": "passed"
 });
 formatter.scenario({
@@ -199,18 +197,19 @@ formatter.match({
   "location": "HomeStep.user_press_on_contact_dropdown_list_and_select_complaint()"
 });
 formatter.result({
-  "duration": 5752644281,
+  "duration": 198016807234,
   "status": "passed"
 });
 formatter.match({
   "location": "HomeStep.complaint_page_is_oepened_successfully()"
 });
 formatter.result({
-  "duration": 373711216,
-  "status": "passed"
+  "duration": 617008,
+  "error_message": "java.lang.NullPointerException\r\n\tat com.pages.bdd.PageBase.waitForVisibilityOf(PageBase.java:20)\r\n\tat com.pages.bdd.ComplaintPage.getPageHeader(ComplaintPage.java:17)\r\n\tat com.steps.bdd.HomeStep.complaint_page_is_oepened_successfully(HomeStep.java:57)\r\n\tat ✽.Then complaint page is opened successfully(HomeTestSpec.feature:21)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 1291199833,
+  "duration": 1046472933,
   "status": "passed"
 });
 });

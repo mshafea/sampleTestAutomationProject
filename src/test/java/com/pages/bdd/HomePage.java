@@ -1,11 +1,10 @@
 package com.pages.bdd;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import com.utility.bdd.DriverFactory;
 
-public class HomePage {
+public class HomePage extends PageBase {
 
 	@FindBy(css = "h1.logo")
 	private WebElement logo;
@@ -46,14 +45,8 @@ public class HomePage {
 	@FindBy(linkText = "Local contact")
 	private WebElement localContact;
 
-	public HomePage() {
-
-		try {
-			PageFactory.initElements(DriverFactory.driver, this);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public HomePage(WebDriver driver) {
+		super(driver);
 	}
 
 	public boolean isLogoDisplayed() {
@@ -61,23 +54,19 @@ public class HomePage {
 	}
 
 	public void pressRightArrow() {
+		waitForVisibilityOf(findOutMore);
 		rightArrow.click();
+		waitForVisibilityOf(signUp);
 	}
 
 	public void pressLeftArrow() {
+		waitForVisibilityOf(signUp);
 		leftArrow.click();
-	}
-
-	public void waitUntilFindOutMoreIsDisplayed() {
-		DriverFactory.waitForElementDisplayed(findOutMore);
+		waitForVisibilityOf(findOutMore);
 	}
 
 	public boolean is_FindOutMore_Slide_Displayed() {
 		return findOutMore.isDisplayed();
-	}
-
-	public void waitUntilSignUpIsDisplayed() {
-		DriverFactory.waitForElementDisplayed(signUp);
 	}
 
 	public boolean is_ٍٍٍSignup_Slide_Displayed() {
@@ -91,18 +80,4 @@ public class HomePage {
 	public void select_Complaint_From_Dropdown() {
 		complaint.click();
 	}
-
-	/*
-	 * public void select_Report_From_Dropdown() { reportMisconduct.click(); }
-	 * 
-	 * public void select_GlobalContacts_From_Dropdown() {
-	 * globalContacts.click(); }
-	 * 
-	 * public void select_ContactsAndOfficesWorldwide_From_Dropdown() {
-	 * contactsAndOfficesWorldwide.click(); }
-	 * 
-	 * public void select_mainOffices_From_Dropdown() { mainOffices.click(); }
-	 * 
-	 * public void select_localContact_From_Dropdown() { localContact.click(); }
-	 */
 }
